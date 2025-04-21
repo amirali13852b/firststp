@@ -28,13 +28,9 @@ body {
     color: var(--black);
     font-family:'BYekan';
 }
-.container
-{
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .first__header {
@@ -128,3 +124,30 @@ body {
     display: block; 
     border-radius: 10px;
     }
+.first__section{
+    direction: rtl;
+    margin-top: 40px;
+    margin-right: 17rem;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+  
+
