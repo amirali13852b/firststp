@@ -180,7 +180,6 @@ body {
 
 .dastebandi{
     margin-top: 40px;
-    place-items: unset;
     width: 105rem;
     margin-left: 7rem;
    
@@ -203,11 +202,9 @@ body {
 }
 
 .porforosh{
- margin-top: 35px;
- place-items: unset;
+ margin-top: 30px;
  width: 105rem;
- margin-left: 7rem;
-   
+ margin-left: 7rem;  
 }
 /* کارت هام */
   
@@ -242,3 +239,27 @@ body {
     margin-top: 25px;
     text-align: left;
 }
+.foroshe__vizhe{
+    margin-top: 10px;
+    width: 105rem;
+    margin-left: 7rem;
+}
+.images__holder{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 70px;
+    transform: scale(0.9);
+    margin-bottom: 10rem;
+}
+.images__cards{
+    margin-top: -7rem; 
+}
+.images-card__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+
