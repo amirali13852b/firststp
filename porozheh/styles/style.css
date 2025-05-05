@@ -1,10 +1,11 @@
 :root {
+    
     --needit: #D6D6D6;
     --red: #A72F3B;
     --orange: #e76f51;
     --black: #111111;
     --grey: #D2D2D2;
-    --white: #FFFFFF;
+    --secondbutton: #EDD5D8;
     --dark: #3B3735;
     --app-bg: #FAF4F2;
     --dark-btn: #8D8D8D;
@@ -33,11 +34,22 @@ body {
    margin-right: auto;
 }
 
+.bikar {
+    background-color: var(--red);
+    color: #ffffff;
+    font-style: italic;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
 .first__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--white);
+    background-color: #FFFFFF;
     padding: 15px 30px;
     flex-direction: row-reverse;
 }
@@ -80,20 +92,16 @@ body {
     font-size: 16px;
 }
 .menu__icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 8px;
     vertical-align: middle;
   }
 .header-menu__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    list-style: none;
+    gap: 45px;
     margin: 20px ;
     padding: 15px ;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 .header-menu__list li {
     cursor: pointer;
@@ -101,7 +109,7 @@ body {
 }
 
 .header-menu__list li:hover {
-    color: var(--orange);
+    color: var(--red);
 }
 .special__li {
     background-color: var(--red);
@@ -109,13 +117,18 @@ body {
     padding: 8px 16px;
     border-radius: 10px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 .special__li:hover {
     background-color: #8b1e2a;
     cursor: pointer;
 }
+.special-li__icon{
+    vertical-align: middle;
+}
 .main__content{
+    position: relative;
+}
+.main__picture{
     width: 80%; 
     max-width: 1000px; 
     margin-top: 20px; 
@@ -124,30 +137,108 @@ body {
     display: block; 
     border-radius: 10px;
     }
-.first__section{
-    direction: rtl;
+.main-content__h1{
+    position: absolute;
+    top: 10rem;
+    left: 90rem;
+    font-size: 2.5rem;
+    color: black;
+}
+.main-content-p__picture{
+    position: absolute;
+    top: 16rem;
+    left: 80rem;
+    width: 29rem;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+.first-main__button{
+    position: absolute;
+    top:  27rem;
+    left: 95rem;
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 145px;
+}
+.second-main__button{
+    position: absolute;
+    top:  27rem;
+    left: 80rem;
+    padding: 10px 20px;
+    background-color: var(--secondbutton);
+    color: var(--red);
+    border-color: var(--red);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 145px;
+}
+
+
+.dastebandi{
     margin-top: 40px;
-    margin-right: 17rem;
+    place-items: unset;
+    width: 105rem;
+    margin-left: 7rem;
+   
 }
 .services{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 35px;
+}
+.service{
+    background-color: #FFFFFF;
+    justify-items: center;
+    text-align: center;
+    border-radius: 12px;
+    width: 140px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.porforosh{
+ margin-top: 35px;
+ place-items: unset;
+ width: 105rem;
+ margin-left: 7rem;
+   
+}
+/* کارت هام */
+  
+.product__cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
-    margin: 4rem auto;
-    max-width: 1200px;
-    padding: 0 2rem;
+    gap: 2rem;
+    margin-top: 35px;
+    transform: scale(0.9);
 }
-.service{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 140px;
-    text-align: center;
-    background-color: white;
+.product__card{
+    background-color: #FFFFFF;
+    padding: 1rem;
     border-radius: 12px;
-    padding: 0.5rem;
+    direction: rtl;
+    cursor: pointer;
+    transition: 0.3s;
+    
 }
-
-  
-
+.product__card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+.product-card__price:hover{
+    color: var(--red);
+}
+.product-card__desc{
+    font-size: small;
+}
+.product-card__price{
+    margin-top: 25px;
+    text-align: left;
+}
