@@ -61,6 +61,8 @@ body {
     border-radius: 30px;
     width: 100%;
     max-width: 500px;
+    background-color: unset;
+    outline: none;
 }
 .search__bar input {
     background-color: #fff;
@@ -179,7 +181,7 @@ body {
 
 
 .dastebandi{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 105rem;
     margin-left: 7rem;
    
@@ -213,7 +215,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin-top: 35px;
+    margin-top: 30px;
     transform: scale(0.9);
 }
 .product__card{
@@ -240,7 +242,7 @@ body {
     text-align: left;
 }
 .foroshe__vizhe{
-    margin-top: 10px;
+    margin-top: 5px;
     width: 105rem;
     margin-left: 7rem;
 }
@@ -254,6 +256,10 @@ body {
 .images__cards{
     margin-top: -7rem; 
 }
+.images-card__item{
+    cursor: pointer;
+}
+
 .images-card__items {
     display: flex;
     flex-wrap: wrap;
@@ -261,5 +267,117 @@ body {
     margin-bottom: 1%;
     cursor: pointer;
 }
+.topof__footer{
+    position: relative;
+    background-color: #641C23;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 180px;
+    direction: rtl;
+    color: white;
 
-
+} 
+.topof-footer__items{
+    padding-right: 10rem;
+    margin-top: 50px;
+}
+.topof-footer__searchbar{
+    display: flex;
+    border-color: white;
+    background-color: unset;
+    width: 405px;
+    height: 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 10rem;
+    color: white;
+    
+}
+.topof-footer__searchbar::placeholder {
+    color: #ffffff;
+  }
+.topof-footer__button{
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 10rem;
+}
+.topof-footer__itemholder{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-right: 10rem;   
+    gap: 1rem;
+}
+.follow{
+    position: absolute;
+  top: 58px;    
+  left: 13rem;
+  direction: ltr;
+   
+}
+.follow__icons{
+    display: flex;
+    gap: 3.5rem;
+}
+.follow__icon{
+   cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #A72F3B;
+    gap: 10rem;
+    color: #FFFFFF;
+    height: 300px;
+}
+.right__list{
+    padding-block: 1rem;
+    font-size: small;
+    margin-top: 0.5rem;
+}
+.special-right__list{
+    font-size: 2rem;
+    border-bottom-width: 1px ;
+    border-color: #FFFFFF;
+    border-style: solid;
+    padding-block: 1rem;
+}
+.footer__h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 17rem;
+    font-size: larger;
+    margin-top: 4rem;
+}
+.footer-p__holder{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-right: 17rem;
+    font-size: smaller;
+    margin-top: 4rem;
+}
+.footer__image{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-right: 7rem;
+    gap: 5rem;
+}
+.peygard{
+    display: flex;
+    background-color: #A72F3B ;
+    color: #FFFFFF;
+    direction: rtl;
+    font-size: smaller;
+    padding-right: 6rem;
+}
