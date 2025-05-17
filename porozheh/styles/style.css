@@ -1,5 +1,5 @@
 :root {
-    
+
     --needit: #D6D6D6;
     --red: #A72F3B;
     --orange: #e76f51;
@@ -18,7 +18,9 @@ html {
     scroll-behavior: smooth;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
@@ -27,11 +29,12 @@ body {
     line-height: 1.6;
     background-color: var(--app-bg);
     color: var(--black);
-    font-family:'BYekan';
+    font-family: 'BYekan';
 }
+
 .container {
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bikar {
@@ -42,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    
+
 }
 
 .first__header {
@@ -64,6 +67,7 @@ body {
     background-color: unset;
     outline: none;
 }
+
 .search__bar input {
     background-color: #fff;
     border: 2px solid var(--grey);
@@ -93,18 +97,21 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+
 .menu__icon {
     vertical-align: middle;
-  }
+}
+
 .header-menu__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 45px;
-    margin: 20px ;
-    padding: 15px ;
+    margin: 20px;
+    padding: 15px;
     font-size: 1.7rem;
 }
+
 .header-menu__list li {
     cursor: pointer;
     transition: color 0.3s ease;
@@ -113,6 +120,7 @@ body {
 .header-menu__list li:hover {
     color: var(--red);
 }
+
 .special__li {
     background-color: var(--red);
     color: white !important;
@@ -120,33 +128,39 @@ body {
     border-radius: 10px;
     font-weight: bold;
 }
+
 .special__li:hover {
     background-color: #8b1e2a;
     cursor: pointer;
 }
-.special-li__icon{
+
+.special-li__icon {
     vertical-align: middle;
 }
-.main__content{
+
+.main__content {
     position: relative;
 }
-.main__picture{
-    width: 80%; 
-    max-width: 1000px; 
-    margin-top: 20px; 
+
+.main__picture {
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 20px;
     margin-left: auto;
-    margin-right: auto; 
-    display: block; 
+    margin-right: auto;
+    display: block;
     border-radius: 10px;
-    }
-.main-content__h1{
+}
+
+.main-content__h1 {
     position: absolute;
     top: 10rem;
     left: 90rem;
     font-size: 2.5rem;
     color: black;
 }
-.main-content-p__picture{
+
+.main-content-p__picture {
     position: absolute;
     top: 16rem;
     left: 80rem;
@@ -154,9 +168,10 @@ body {
     font-size: 1.4rem;
     color: var(--black);
 }
-.first-main__button{
+
+.first-main__button {
     position: absolute;
-    top:  27rem;
+    top: 27rem;
     left: 95rem;
     padding: 10px 20px;
     background-color: var(--red);
@@ -166,9 +181,15 @@ body {
     cursor: pointer;
     width: 145px;
 }
-.second-main__button{
+.first-main-button__img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.second-main__button {
     position: absolute;
-    top:  27rem;
+    top: 27rem;
     left: 80rem;
     padding: 10px 20px;
     background-color: var(--secondbutton);
@@ -180,20 +201,22 @@ body {
 }
 
 
-.dastebandi{
+.dastebandi {
     margin-top: 20px;
     width: 105rem;
     margin-left: 7rem;
-   
+
 }
-.services{
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  justify-content: center;
-  margin-top: 35px;
+
+.services {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 35px;
 }
-.service{
+
+.service {
     background-color: #FFFFFF;
     justify-items: center;
     text-align: center;
@@ -203,14 +226,15 @@ body {
     cursor: pointer;
 }
 
-.porforosh{
- margin-top: 30px;
- width: 105rem;
- margin-left: 7rem;  
+.porforosh {
+    margin-top: 30px;
+    width: 105rem;
+    margin-left: 7rem;
 }
+
 /* کارت هام */
-  
-.product__cards{
+
+.product__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -218,56 +242,225 @@ body {
     margin-top: 30px;
     transform: scale(0.9);
 }
-.product__card{
+
+.product__card {
     background-color: #FFFFFF;
     padding: 1rem;
     border-radius: 12px;
     direction: rtl;
-    cursor: pointer;
     transition: 0.3s;
-    
+    border: 1px solid rgba(0, 0, 0, 0.10);
 }
+
 .product__card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  }
-.product-card__price:hover{
-    color: var(--red);
 }
-.product-card__desc{
+
+.product-card__price:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+.product-card__desc {
     font-size: small;
 }
-.product-card__price{
+
+.product-card__price {
     margin-top: 25px;
     text-align: left;
 }
-.foroshe__vizhe{
+
+.product__like {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card__button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: #FFFFFF;
+    color: #A72F3B;
+    width: 100%;
+    border: 2px solid #A72F3B;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.3s;
+    gap: 5px;
+    align-items: center;
+}
+
+.product-card__button:hover {
+    background: rgb(199, 100, 100);
+    color: #FFFFFF;
+}
+
+.product-card-button__img {
+    width: 20px;
+    height: 20px;
+}
+
+.foroshe__vizhe {
     margin-top: 5px;
     width: 105rem;
     margin-left: 7rem;
 }
-.images__holder{
+
+.images__holder {
     display: flex;
     flex-direction: row-reverse;
     padding: 70px;
     transform: scale(0.9);
-    margin-bottom: 10rem;
+
 }
-.images__cards{
-    margin-top: -7rem; 
+
+.images__cards {
+    margin-top: -7rem;
 }
-.images-card__item{
+
+.images-card__item {
     cursor: pointer;
 }
 
 .images-card__items {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; 
+    gap: 2rem;
     margin-bottom: 1%;
     cursor: pointer;
 }
-.topof__footer{
+
+.tarhaye__portarafdar {
+    width: 112rem;
+    margin-left: 5rem;
+    margin-top: 5px;
+}
+
+.tarahane_bartar {
+    width: 112rem;
+    margin-left: 5rem;
+    margin-top: 5px;
+}
+
+
+.product-cards__person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 30px;
+}
+
+.product-card__person {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.product-card__person:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card-person__img {
+    padding: 2rem;
+}
+
+.person__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.product-card__personinfo {
+    display: flex;
+    gap: 2rem;
+    font-size: x-small;
+}
+
+.product-card-personinfo__imgs {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.product-card-person__button {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: #A72F3B;
+    width: 100%;
+    border: 2px solid #A72F3B;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+    gap: 5px;
+}
+
+.product-card-person__button:hover {
+    background: rgb(199, 100, 100);
+    color: #FFFFFF;
+}
+
+.product-card-button__img {
+    width: 20px;
+    height: 20px;
+}
+
+.additional-images {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.9);
+    gap: 8rem;
+    margin-top: 30px;
+}
+
+.jadidtarinha {
+    width: 112rem;
+    margin-left: 5rem;
+    margin-top: 20px;
+}
+.product-card-img__special{
+    height: 38rem;
+}
+.Invitation__card{
+   display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Invitation-card__img{
+    width: 79%;
+}
+.like-first-main__button{
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 145px;
+}
+
+
+
+
+
+
+
+
+
+/*footer           */
+.topof__footer {
     position: relative;
     background-color: #641C23;
     display: flex;
@@ -277,13 +470,16 @@ body {
     height: 180px;
     direction: rtl;
     color: white;
+    margin-top: 40px;
 
-} 
-.topof-footer__items{
+}
+
+.topof-footer__items {
     padding-right: 10rem;
     margin-top: 50px;
 }
-.topof-footer__searchbar{
+
+.topof-footer__searchbar {
     display: flex;
     border-color: white;
     background-color: unset;
@@ -294,12 +490,14 @@ body {
     border: 1px solid rgb(255, 255, 255);
     margin-bottom: 10rem;
     color: white;
-    
+
 }
+
 .topof-footer__searchbar::placeholder {
     color: #ffffff;
-  }
-.topof-footer__button{
+}
+
+.topof-footer__button {
     padding: 10px 20px;
     background-color: var(--red);
     color: white;
@@ -309,28 +507,32 @@ body {
     width: 80px;
     margin-bottom: 10rem;
 }
-.topof-footer__itemholder{
+
+.topof-footer__itemholder {
     display: flex;
     text-align: center;
     align-items: center;
-    padding-right: 10rem;   
+    padding-right: 10rem;
     gap: 1rem;
 }
-.follow{
+
+.follow {
     position: absolute;
-  top: 58px;    
-  left: 13rem;
-  direction: ltr;
-   
+    top: 58px;
+    left: 15rem;
+    direction: ltr;
 }
-.follow__icons{
+
+.follow__icons {
     display: flex;
     gap: 3.5rem;
 }
-.follow__icon{
-   cursor: pointer;
+
+.follow__icon {
+    cursor: pointer;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
     background-color: #A72F3B;
@@ -338,19 +540,22 @@ body {
     color: #FFFFFF;
     height: 300px;
 }
-.right__list{
+
+.right__list {
     padding-block: 1rem;
     font-size: small;
     margin-top: 0.5rem;
 }
-.special-right__list{
+
+.special-right__list {
     font-size: 2rem;
-    border-bottom-width: 1px ;
+    border-bottom-width: 1px;
     border-color: #FFFFFF;
     border-style: solid;
     padding-block: 1rem;
 }
-.footer__h2{
+
+.footer__h2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -358,7 +563,8 @@ body {
     font-size: larger;
     margin-top: 4rem;
 }
-.footer-p__holder{
+
+.footer-p__holder {
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -366,18 +572,23 @@ body {
     font-size: smaller;
     margin-top: 4rem;
 }
-.footer__image{
+
+.footer__image {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
-    margin-right: 7rem;
+    margin-right: 8rem;
     gap: 5rem;
 }
-.peygard{
+
+.peygard {
     display: flex;
-    background-color: #A72F3B ;
+    background-color: #A72F3B;
     color: #FFFFFF;
     direction: rtl;
     font-size: smaller;
     padding-right: 6rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
